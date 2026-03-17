@@ -4,44 +4,142 @@ body {
     align-items: center;
     align-content: center;
     font-family: Barlow;
-    padding: 130px;
-
 }
 
 .main-container {
     display: flex;
-    height: 100vh;
     align-items: center;
+    object-fit: contain;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     color: #2A4A5C ;
+    margin: 150px;
 }
 
 .image-section {
-    width: 100%;
-    height: 100%;
+    position: relative;
+    display: inline-block;
+    padding-right: 50px;
 }
 
-.image-section img {
-    width: 100%;
-    height: 100%;
+.photo {
+    display: block;
+      width: 100%;
+  height: auto;
 }
+
+.photo-logo {
+    display: absolute;
+      top: 50px; 
+  left: 50px;
+  opacity: 0.8; 
+  width: 150px;
+}
+
 
 .form-section {
     flex: 1;
-    padding: 150px;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
 }
 
-.type-boxes {
-    display: flex;
-}
+
 
 .title {
     font-size: 25px;
     font-weight: bolder;
 }
+
+.sub-title {
+    font-size: 20px;
+}
+
+
+
+
+.social-buttons {
+
+
+}
+
+.fb {
+    background-color: #3b5998;
+    color: white;            
+    border: none;           
+}
+
+.fb img {
+    width: 18px;               
+    height: 18px;
+    object-fit: contain;      
+}
+
+.ln {
+    background-color: #0077b5; 
+    color: white;
+    border: none;
+}
+
+.ln img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+
+/* SEPARATOR */
+
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    color: #2A4A5C;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #eee;
+}
+
+.separator span {
+    padding: 0 10px;
+}
+
+.email-input {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    max-width: max-content;
+}
+
+.email-input label {
+    margin-bottom: 4px
+    border: 2px #EEEEEE solid;
+;
+}
+
+.email-input input {
+  padding: 13px 15px;
+  border: none;
+  outline: none;
+  background: white;
+}
+
+
+
+
+.type-boxes {
+    display: flex;
+}
+
+
 
 .info-trigger {
     display: flex;
@@ -72,30 +170,6 @@ body {
     visibility: visible;
     opacity: 1;
 }
-
-
-
-.email-input {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    position: static;
-    max-width: max-content;
-}
-
-.email-input label {
-    margin-bottom: 4px
-    border: 2px #EEEEEE solid;
-;
-}
-
-.email-input input {
-  padding: 13px 15px;
-  border: none;
-  outline: none;
-  background: white;
-}
-
 
 .Register {
     background-color: #3698FB;

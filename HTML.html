@@ -11,18 +11,31 @@
 <body>
 
     <div class="main-container">
+
+
         <div class="image-section">
-            <img src="bg.jpg" alt="Illustration">
+            <img src="logo.svg" alt="" class="photo-logo">
+            <img src="bg.jpg" alt="Illustration" class="photo">
         </div>
+
+
         <div class="form-section">
 
             <p class="title">Get iintoo it today</p>
-            <p class="sub-title-first">There is no charge or obligation upon registration</p>
+            <p class="sub-title">There is no charge or obligation upon registration</p>
 
-            <p>Register with Facebook</p>
-            <p>Register with LinkedIn</p>
+                <div class="social-buttons">
+                    <button class="fb">
+                    <img src="facebook.svg" alt="">Register with Facebook</button>
+                    <button class="ln">
+                    <img src="linkedin.svg" alt="">Register with LinkedIn</button>
+                </div>
             <br>
-            <span>OR</span>
+
+            <div class="separator">
+                <span>OR</span>
+            </div>
+            
 
             <div class="email-input">
                 <label for="input" class="text">Email</label>
@@ -31,7 +44,10 @@
             
             <input type="text" placeholder="Phone">
 
-            <p>What type of investor are you?</p>
+            <div class="sub-title">
+                <p>What type of investor are you?</p>
+            </div>
+            
 
             <p>Select the type of investor you are below.</p>
             <div class="type-boxes">
@@ -46,15 +62,18 @@
                     </div>
                 </label>
                 
-
                 <input type="radio" name="checkbox2" id="checkbox2">
                 <label for="checkbox2">Business</label>
+                <span class="info-trigger">i</span>
 
                 <input type="radio" name="checkbox3" id="checkbox3">
                 <label for="checkbox3">IRA</label>
+                <span class="info-trigger">i</span>
 
                 <input type="radio" name="checkbox4" id="checkbox4">
                 <label for="checkbox4">Trust</label>
+                <span class="info-trigger">i</span>
+
             </div>
 
             <br>
