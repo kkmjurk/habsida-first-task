@@ -22,17 +22,18 @@ body {
 }
 
 .photo {
-    display: block;
+    position: relative;
       width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .photo-logo {
-    display: absolute;
-      top: 50px; 
-  left: 50px;
-  opacity: 0.8; 
-  width: 150px;
+    position: absolute;
+    width: 100px;
+    left: 50px;
+    top: 50px;
+    z-index: 10;
 }
 
 
@@ -66,24 +67,30 @@ body {
 .fb {
     background-color: #3b5998;
     color: white;            
-    border: none;           
+    border: none;   
+    padding: 10px 50px;        
 }
 
 .fb img {
+    position: relative;
+    right: 30px;
     width: 18px;               
     height: 18px;
-    object-fit: contain;      
+         
 }
 
 .ln {
     background-color: #0077b5; 
     color: white;
     border: none;
+    padding: 10px 50px;
 }
 
 .ln img {
     width: 18px;
     height: 18px;
+    position: relative;
+    right: 30px;
     object-fit: contain;
 }
 
@@ -137,6 +144,7 @@ body {
 
 .type-boxes {
     display: flex;
+    
 }
 
 
@@ -144,6 +152,8 @@ body {
 .info-trigger {
     display: flex;
     justify-content: center;
+    align-self: center;
+    align-self: flex-start;
     align-items: center;
     width: 14px;
     height: auto;
@@ -153,6 +163,10 @@ body {
     color: #999;
     margin-left: 6px;
     vertical-align: middle;
+}
+
+.checkboxes {
+    align-self: flex-start;
 }
 
 .tooltip {
