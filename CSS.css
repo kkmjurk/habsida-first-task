@@ -11,7 +11,7 @@ body {
     align-items: center;
     object-fit: contain;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    color: #2A4A5C ;
+    color: #2A4A5C;
     margin: 150px;
 }
 
@@ -23,9 +23,8 @@ body {
 
 .photo {
     position: relative;
-      width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .photo-logo {
@@ -48,39 +47,40 @@ body {
 
 
 .title {
+    padding-top: 90px;
     font-size: 25px;
     font-weight: bolder;
 }
 
 .sub-title {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 
 
 
 .social-buttons {
-
-
+    display: flex;
+    gap: 50px;
 }
 
 .fb {
     background-color: #3b5998;
-    color: white;            
-    border: none;   
-    padding: 10px 50px;        
+    color: white;
+    border: none;
+    padding: 10px 50px;
 }
 
 .fb img {
     position: relative;
     right: 30px;
-    width: 18px;               
+    width: 18px;
     height: 18px;
-         
+
 }
 
 .ln {
-    background-color: #0077b5; 
+    background-color: #0077b5;
     color: white;
     border: none;
     padding: 10px 50px;
@@ -108,7 +108,8 @@ body {
     font-weight: bold;
 }
 
-.separator::before, .separator::after {
+.separator::before,
+.separator::after {
     content: '';
     flex: 1;
     border-bottom: 1px solid #eee;
@@ -118,28 +119,48 @@ body {
     padding: 0 10px;
 }
 
+.inputs {
+    display: flex;
+    position: relative;
+    gap: 150px;
+}
+
 .email-input {
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    position: static;
-    max-width: max-content;
+    border-radius: 0px 5px 0px 0px;
+    border: 1px solid #eeeeee;
 }
 
-.email-input label {
-    margin-bottom: 4px
-    border: 2px #EEEEEE solid;
-;
+.input-text {
+    color: #AFAFAF;
 }
 
 .email-input input {
-  padding: 13px 15px;
-  border: none;
-  outline: none;
-  background: white;
+    padding: 13px 15px;
+    border: none;
+    outline: none;
+    background: white;
+
 }
 
+.phone-input {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid #eeeeee;
+}
 
+.phone-input input {
+    padding: 13px 15px;
+    border: none;
+    outline: none;
+    background: white;
+}
+
+.investor {
+    font-size: 20px;
+}
 
 
 .type-boxes {
@@ -167,6 +188,11 @@ body {
 
 .checkboxes {
     align-self: flex-start;
+
+}
+
+input[type="radio"] {
+    accent-color: blue;
 }
 
 .tooltip {

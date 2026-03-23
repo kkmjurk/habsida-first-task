@@ -22,8 +22,9 @@
         <div class="form-section">
 
             <p class="title">Get iintoo it today</p>
-            <p class="sub-title">There is no charge or obligation upon registration</p>
 
+            <p class="sub-title">There is no charge or obligation upon registration</p>
+            <br>
             <div class="social-buttons">
                 <button class="fb">
                     <img src="facebook.svg" alt="">Register with Facebook</button>
@@ -36,30 +37,34 @@
                 <span>OR</span>
             </div>
 
+            <div class="inputs">
 
-            <div class="email-input">
-                <label for="input" class="text">Email</label>
-                <input type="text" name="input" class="input">
+                <div class="email-input">
+                    <label for="input" class="input-text">Email</label>
+                    <input type="text" name="input" class="input">
+                </div>
+
+                <div class="phone-input">
+                    <label for="input" class="input-text">Phone</label>
+                    <input type="text" name="input" class="input">
+                </div>
+
             </div>
 
-            <input type="text" placeholder="Phone">
-
-            <div class="sub-title">
-                <p>What type of investor are you?</p>
-            </div>
+           
+                <p class="investor">What type of investor are you?</p>
+           
 
 
             <p>Select the type of investor you are below.</p>
             <div class="type-boxes">
 
-                    <input type="radio" class="checkboxes" name="checkbox1" value="individual" checked>
-                    <span>Individual</span>
+                <input type="radio" class="checkboxes" name="checkbox1" id="checkbox1" checked>
+                <label for="checkbox1">Individual</label>
 
-                    <span class="info-trigger">i</span>
+                <span class="info-trigger">i</span>
 
-                    <div class="tooltip">
-                        I am a natural person investing on my own as a sole owner, joint tenant, or tenant in common.
-                    </div>
+
 
 
                 <input type="radio" class="checkboxes" name="checkbox2" id="checkbox2">
@@ -73,6 +78,10 @@
                 <input type="radio" class="checkboxes" name="checkbox4" id="checkbox4">
                 <label for="checkbox4">Trust</label>
                 <span class="info-trigger">i</span>
+
+                <div class="tooltip">
+                    I am a natural person investing on my own as a sole owner, joint tenant, or tenant in common.
+                </div>
 
             </div>
 
@@ -89,6 +98,7 @@
             <div>
                 <button class="Register">Create Account</button>
             </div>
+            <br><br>
 
 
         </div>
