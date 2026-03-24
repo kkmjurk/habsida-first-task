@@ -12,13 +12,14 @@ body {
     object-fit: contain;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     color: #2A4A5C;
-    margin: 150px;
+    margin: 100px;
 }
 
 .image-section {
     position: relative;
     display: inline-block;
     padding-right: 50px;
+    object-fit: cover;
 }
 
 .photo {
@@ -48,12 +49,14 @@ body {
 
 .title {
     padding-top: 90px;
-    font-size: 25px;
-    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 0;
 }
 
 .sub-title {
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: lighter;
+    margin-bottom: 30px;
 }
 
 
@@ -105,7 +108,7 @@ body {
     margin: 20px 0;
     color: #2A4A5C;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .separator::before,
@@ -122,14 +125,18 @@ body {
 .inputs {
     display: flex;
     position: relative;
-    gap: 150px;
+    gap: 15px;
+    margin-bottom: ;
 }
 
 .email-input {
     display: flex;
     flex-direction: column;
     border-radius: 0px 5px 0px 0px;
+    padding-left: 20px;
+    padding-top: 10px;
     border: 1px solid #eeeeee;
+    border-left: 2px solid #91bdf7;
 }
 
 .input-text {
@@ -137,7 +144,7 @@ body {
 }
 
 .email-input input {
-    padding: 13px 15px;
+    padding: 6px 50px;
     border: none;
     outline: none;
     background: white;
@@ -148,24 +155,36 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 0px 0px 5px 5px;
+    padding-left: 20px;
+    padding-top: 10px;
     border: 1px solid #eeeeee;
 }
 
 .phone-input input {
-    padding: 13px 15px;
+    padding: 6px 50px;
     border: none;
     outline: none;
     background: white;
 }
 
 .investor {
-    font-size: 20px;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 0;
+    font-size: 25px;
+}
+
+.select {
+    display: flex;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-bottom: 60px;
 }
 
 
 .type-boxes {
     display: flex;
-    gap: ;
+    gap: 10px;
 }
 
 
@@ -196,9 +215,7 @@ input[type="radio"] {
 }
 
 .tooltip {
-    flex-direction: column;
     font-weight: 100;
-    visibility: hidden;
     width: 280px;
     background-color: white;
     color: #AFAFAF;
@@ -209,10 +226,7 @@ input[type="radio"] {
     box-shadow: 0 10px 30px #e3e3e3;
 }
 
-.info-trigger:hover+.tooltip {
-    visibility: visible;
-    opacity: 1;
-}
+
 
 .Register {
     background-color: #3698FB;
